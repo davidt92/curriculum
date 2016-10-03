@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="author" content="David Teixe Molins">
+  <meta charset="utf-8">
+  <style>
+fieldset
+{
+
+   width: 500px;
+   left: 120px;
+   border: 15px solid blue;
+}
+label
+{
+  display: inline-block;
+  width: 180px;
+  text-align: right;
+  text-align: top;
+}
+
+.trytry
+{
+    margin: auto;
+    width: 35%;
+    padding: 10px;
+}
+
+.trytryone
+{
+    margin: auto;
+    width: 65%;
+    padding: 10px;
+}
+textarea
+{
+  width: 100%;
+  height: 100%;
+}
+  </style>
+  <title>TEIXE.CAT</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>DADES USUARI</legend>
+      <label for="nom">Nom: </label>
+      <input type="text" id="noms" name="nom" placeholder="Introdueix Nom" autofocus required> <br> <br>
+      <label for="cognom">Cognom:</label>
+      <input type="text" id="cognom" name="cognom" placeholder="Introdueix Cognom" required> <br> <br>
+      <label for="edad">Edad: </label>
+      <input type="number" id="edad" name="edad" placeholder="Introdueix edad"> <br> <br>
+      <label for="dataNaixement">Data de Naixement: </label>
+      <input type="date" id="dataNaixement" name="dataNaixement" placeholder="Introdueix data de Naixement" required> <br> <br>
+      <label for="direccio">Direcció: </label>
+      <input type="text" name="direccio" id="direccio" placeholder="Introdueix direccó completa" required> <br> <br>
+      <label for="email">Email: </label>
+      <input type="text" name="email" id="mail" placeholder="Introdueix email" required> <br> <br>
+      <label for="telefon">Telefon: </label>
+      <input type="text" name="telefon" id="telefon" placeholder="Introdueix telefon" required> <br> <br>
+    </fieldset>
+    <br><br>
+
+    <fieldset id="afEstudi">
+      <legend> ESTUDIS </legend>
+      <div class="trytry">
+        <input type="button" value="AFEGEIX ESTUDIS" onclick="afegirEstudi()">
+      </div>
+
+    </fieldset>
+<br> <br>
+<fieldset>
+  <legend>IDIOMES</legend>
+  <div class="trytry">
+    <input type="button" value="AFEGEIX IDIOMES" onclick="afegirIdiomes()">
+  </div>
+</fieldset>
+
+<br><br>
+<fieldset>
+  <legend>Introdueix altres Dades d'interes </legend>
+  <textarea id="textarea1">Introdueix altres dades d'interes</textarea>
+</fieldset>
+    <br>
+    <div class="trytryone">
+    <input type="button" value="SEND" onclick="comprovacionsAvansDeCrearPagina()">
+  </div>
+  </form>
+
+  <script src="java.js"></script>
+</body>
+</html>
